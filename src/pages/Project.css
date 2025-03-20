@@ -1,0 +1,33 @@
+.project-details {
+    padding: 20px;
+    border-radius: 8px; /* Закругление */
+    background-color: #f9f9f9; /* Светлый фон */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+.project-details__content {
+    display: flex; /* Флекс-контейнер */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    margin-top: 20px;
+}
+
+.project-details__cover {
+    width: 300px; /* Ширина изображения */
+    height: auto; /* Автоматическая высота */
+    border-radius: 8px; /* Закругление изображения */
+    margin-right: 20px; /* Отступ справа от изображения */
+}
+
+.project-details__desc {
+    flex: 1; /* Занимает оставшееся пространство */
+    padding: 20px;
+    border-radius: 8px; /* Закругление */
+    background-color: #ffffff; /* Белый фон */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень */
+    color: slategray; /* Цвет текста */
+    text-align: left; /* Выравнивание по левому краю */
+}
+
+.project-details__desc strong {
+    color: black; /* Чёрный цвет для выделенного текста */
+}

@@ -1,0 +1,33 @@
+.filter-container {
+    background-color: #f8f9fa; /* Цвет фона блока */
+    border-radius: 10px; /* Закругление углов */
+    padding: 1rem; /* Отступы внутри блока */
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
+    margin-bottom: 1rem; /* Отступ снизу */
+    font-family: '8bit', sans-serif;
+}
+
+.filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Промежуток между фильтрами */
+}
+
+.filter-item {
+    flex: 1 1 30%; /* Ширина фильтров: 30% от контейнера */
+    min-width: 200px; /* Минимальная ширина фильтра */
+}
+
+select {
+    width: 100%; /* Ширина выпадающего списка на 100% */
+    max-width: 300px; /* Максимальная ширина выпадающего списка */
+}
+
+@font-face {
+	font-family: "8bit";
+	src: url("./../fonts/NEW.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+
+  }

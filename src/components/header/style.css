@@ -1,0 +1,219 @@
+.header {
+
+	padding: 50px 20px;
+	min-height: 755px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: white;
+	background-image: url('./../../img/new_back.png');
+	background-repeat: no-repeat;
+	background-size: 130%;
+	background-position: left;
+	background-position-x: -192px;
+	background-position-y: -22px;
+
+	color: var(--header-text);
+	text-align: center;
+	z-index: 3;
+	font-family: '8bit', sans-serif;
+	font-size: 10px;
+}
+
+.h1 {
+	font-size: 80px;
+}
+
+.header__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0; /* Задний план */
+}
+
+.header__wrapper {
+	padding: 0 15px;
+	max-width: 6600px;
+}
+
+.header__title {
+	margin-bottom: 20px;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+.header__title strong {
+	font-size: 60px;
+	font-weight: 700;
+}
+
+.header__title em {
+	font-style: normal;
+	color: var(--accent);
+}
+
+.header__text {
+	margin-bottom: 40px;
+	font-size: 18px;
+	line-height: 1.333;
+}
+
+.header__text p + p {
+	margin-top: 0.5em;
+}
+
+.rotating-icon-text {
+	position: relative;
+	left: -400px;
+	top: 60px ;
+    width: 700px; /* Установите нужный размер */
+    height: 700px; /* Установите нужный размер */
+    /*background-color: black; /* Белый фон */
+    padding: 0px; /* Отступы вокруг картинки */
+    border-radius: 50%; /* Закругленные края, если хотите круг */
+    animation: rotate 20s linear infinite;
+    /*box-sizing: border-box; /* Учитывать padding в общей ширине и высоте */
+}
+
+
+.tab{
+	background-color: rgba(0, 0, 0, 0.456);
+	backdrop-filter: blur(10px);
+	position: absolute;
+	padding: 1%;
+	left: 850px;
+	top: 400px ;
+	width: 550px;
+	height: 267px;
+	font-size: 26px;
+	border-radius: 5%;
+	text-align: left ;
+	z-index: 10;
+
+}
+
+.star-animation {
+    position: absolute; /* Позволяет разместить элемент в любом месте */
+    width: 150px; /* Установи нужный размер */
+    height: auto; /* Автоматическая высота */
+    z-index: -1; /* Звезды под фоном */
+}
+
+.blick-animation {
+    position: absolute; /* Позволяет разместить элемент в любом месте */
+    width: 100px; /* Установи нужный размер */
+    height: auto; /* Автоматическая высота */
+    z-index: -1; /* Расположи ниже остальных элементов */
+}
+
+.blick-static {
+    position: absolute; /* Позволяет разместить элемент в любом месте */
+    width: 100px; /* Установи нужный размер */
+    height: auto; /* Автоматическая высота */
+    z-index: -1; /* Расположи ниже остальных элементов */
+}
+
+.star-static {
+    position: absolute; /* Позволяет разместить элемент в любом месте */
+    width: 100px; /* Установи нужный размер */
+    height: auto; /* Автоматическая высота */
+    z-index: -1; /* Расположи ниже остальных элементов */
+}
+
+.ticker-inline {
+	margin: 0 auto;
+	overflow: hidden;
+  }
+
+  .ticker-inline-bottom-trial {
+	margin-bottom: 4rem;
+  }
+
+  .tickers {
+	position: fixed;
+	display: inline-block;
+	white-space: nowrap;
+	width: 1735px;
+	left: -950px;
+	top: 350px;
+	background: #181818;
+	overflow: hidden;
+	z-index: 0;
+  }
+
+  .ticker1 {
+	position: absolute;
+	top: 2px;
+	left: -110%;
+	animation: marquee1 1s linear infinite;
+  }
+
+  .ticker {
+	display: flex;
+	font-family: var(--font-first);
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 400;
+	color: #fffcf7;
+	animation: startLine 15s linear, marquee 15s linear 0s infinite;
+	width: 3500px;
+    height: 27px;
+  }
+
+  .ticker__head {
+	width: 430px;
+	text-align: center;
+	margin-left: auto;
+  }
+
+  @keyframes startLine {
+	0% {
+	  transform: translateX(-1000%);
+	}
+	100% {
+	  transform: translateX(-50%);
+	}
+  }
+
+  @keyframes marquee {
+	0% {
+	  transform: translateX(-10%);
+	}
+	100% {
+	  transform: translateX(0%);
+	}
+  }
+
+@keyframes rotate {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@font-face {
+	font-family: "valisca";
+	src: url("./../../fonts/NEW.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+
+  }
+
+  @font-face {
+	font-family: "8bit";
+	src: url("./../../fonts/NEW.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+
+  }
+

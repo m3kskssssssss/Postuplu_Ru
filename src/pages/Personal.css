@@ -1,0 +1,16 @@
+.practice-section {
+    margin-top: 20px; /* Отступ сверху для секции практики */
+    display: flex; /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+}
+
+.practice-container {
+    border: 1px solid #007BFF; /* Уменьшена толщина рамки */
+    border-radius: 15px; /* Закругление углов */
+    padding: 15px; /* Уменьшены отступы внутри контейнера */
+    background-color: #f9f9f9; /* Цвет фона */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Уменьшена тень для глубины */
+    max-width: 250px; /* Установите максимальную ширину рамки */
+    width: 100%; /* Занимает всю доступную ширину до max-width */
+    margin: 0 auto; /* Центрируем рамку */
+}

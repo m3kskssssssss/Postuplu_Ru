@@ -1,0 +1,199 @@
+.nav {
+	position: fixed;
+	padding: 17px 0;
+	width: 100%;
+	background-color: var(--nav-bg);
+	border-bottom: 1px solid var(--nav-border);
+	color: var(--nav-text);
+	letter-spacing: normal;
+	z-index: 10;
+}
+
+.nav-row {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	column-gap: 30px;
+	row-gap: 20px;
+	flex-wrap: wrap;
+}
+
+.logo {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 10px;
+	align-items: center;
+	column-gap: 40px;
+	font-size: 40px;
+	font-weight: 500;
+	font-family: '8bit', sans-serif;
+}
+
+.logo strong {
+	font-weight: 700;
+}
+
+.nav-list {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 10px;
+	align-items: center;
+	column-gap: 40px;
+	font-size: 22px;
+	font-weight: 500;
+	font-family: '8bit', sans-serif;
+}
+
+.nav-list__link {
+	color: var(--nav-text);
+	transition: opacity 0.2s ease-in;
+}
+
+.nav-list__link:hover {
+	opacity: 0.8;
+}
+
+.nav-list__link--active {
+	position: relative;
+}
+
+.nav-list__link--active::before {
+	content: '';
+
+	position: absolute;
+	left: 0;
+	top: 100%;
+
+	display: block;
+	height: 2px;
+	width: 100%;
+	background-color: var(--accent);
+}
+
+.rotating-icon {
+    width: 52px; /* Установите нужный размер */
+    height: 52px; /* Установите нужный размер */
+    animation: rotate 5s linear infinite;
+    box-sizing: border-box; /* Учитывать padding в общей ширине и высоте */
+}
+
+.nav-list__item {
+    display: flex;
+    align-items: center; /* Центрируем иконку по вертикали */
+    font-size: 18px;
+}
+
+.nav-list__link img {
+    width: 35px; /* Установите нужный размер для иконки */
+    height: 35px; /* Установите нужный размер для иконки */
+	/*top: -50px;*/
+	/*display: flex;*/
+	/*flex-wrap: wrap;*/
+    /*margin-right: 5px; !* Отступ между иконкой и текстом *!*/
+}
+
+.nav-list__link--active img {
+    opacity: 0.8; /* Пример эффекта при активной ссылке */
+}
+
+.modal {
+    position: fixed;
+	padding: 20px 0;
+	color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.708);
+	backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+	font-size: 22px;
+	font-weight: 500;
+	font-family: '8bit', sans-serif;
+}
+
+.modal-content {
+    
+	background-color: #0000009a;
+    padding: 50px;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+	font-size: 22px;
+	font-weight: 500;
+	font-family: '8bit', sans-serif;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+	text-align: center;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@font-face {
+	font-family: "valisca";
+	src: url("./../../fonts/NEW.otf") format("opentype");
+	font-style: normal;
+	font-weight: normal;
+
+  }
+
+  @font-face {
+	font-family: "8bit";
+	src: url("./../../fonts/NEW.otf") format("opentype");
+	font-style: normal;
+	font-weight: normal;
+
+  }
+
+  .news-list {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам располагаться в несколько строк */
+    gap: 20px; /* Отступ между элементами */
+}
+
+.news-item {
+    background-color: #ffffff; /* Цвет фона для блока новости */
+    border: 1px solid #cccccc; /* Граница блока */
+    border-radius: 8px; /* Закругленные углы */
+    padding: 15px; /* Отступ внутри блока */
+    width: calc(33.333% - 20px); /* Ширина блока, 3 в ряд с учетом отступа */
+    cursor: pointer; /* Указатель при наведении */
+    transition: transform 0.2s; /* Плавный эффект при наведении */
+}
+
+.news-item:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+}
+
+.news-image {
+    width: 100%; /* Изображение на всю ширину блока */
+    height: auto; /* Автоматическая высота */
+    border-radius: 4px; /* Закругленные углы изображения */
+}
+
+.news-title {
+    font-family: '8bit', sans-serif; /* Шрифт заголовка */
+    margin: 10px 0; /* Отступы */
+}
+
+.news-content {
+    font-family: '8bit', sans-serif; /* Шрифт содержания */
+}

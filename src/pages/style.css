@@ -1,0 +1,256 @@
+.title-2 {
+    color: black;
+	text-align: center;
+	z-index: 3;
+	font-family: '8bit', sans-serif;
+	
+}
+
+@font-face {
+	font-family: "8bit";
+	src: url("./../fonts/NEW.otf") format("opentype");
+	font-style: normal;
+	font-weight: normal;
+
+  }
+
+  .search {
+    display: flex;
+    align-items: center; /* Центрируем элементы по вертикали */
+}
+
+.search input {
+    padding: 10px 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: '8bit', sans-serif;
+    
+    
+}
+
+.search button {
+    /*padding: 10px 25px;*/
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: '8bit', sans-serif;
+    margin-left: 10px; /* Отступ между кнопками */
+    width: 120px; /* Задайте желаемую ширину */
+    height: 40px; /* Задайте желаемую высоту */
+    font-family: '8bit', sans-serif;
+}
+
+.search button:hover {
+    background-color: #8f6008;
+}
+
+.filters {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; /* Центрируем элементы по вертикали */
+}
+
+.filters div {
+    margin-bottom: 10px;
+}
+
+.filters label {
+    margin-right: 10px;
+    
+	font-family: '8bit', sans-serif;
+	display: block;
+	
+}
+
+.filters select {
+    padding: 5px;
+    margin-right: 10px;
+	font-family: '8bit', sans-serif;
+	display: block;
+	
+}
+
+.filters button {
+    padding: 10px 25px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: '8bit', sans-serif;
+    margin-left: 10px; /* Отступ между кнопками */
+    width: 120px; /* Задайте желаемую ширину */
+    height: 60px; /* Задайте желаемую высоту */
+}
+
+.filters button:hover {
+    background-color: #8f6008;
+    
+	font-family: '8bit', sans-serif;
+	display: flex
+	
+}
+
+.personal-dashboard {
+    display: flex;
+    height: 100vh; /* Задаем высоту на весь экран */
+}
+
+.categories {
+    width: 25%; /* Ширина для списка категорий */
+    padding: 20px;
+    background-color: #ffffff; /* Цвет фона для категорий */
+    border-right: 1px solid #cccccc; /* Разделительная линия */
+    font-family: '8bit', sans-serif;
+	color: white;
+    font-size: 20px; 
+}
+
+.categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.categories li {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #000;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 4px; /* Закругленные углы */
+}
+
+.categories li:hover {
+    background-color: #8f6008;
+}
+
+.content {
+    width: 75%; /* Ширина для содержимого */
+    padding: 20px;
+    overflow-y: auto; /* Прокрутка при необходимости */
+}
+
+.personal-info, .interests {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-info input, .interests input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    font-family: '8bit', sans-serif;
+}
+
+.personal-info select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 12px 15px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 15px;
+    font-family: '8bit', sans-serif;
+}
+
+button:hover {
+    background-color: #8f6008;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Вертикальное выравнивание */
+}
+
+.search-filters-container {
+    display: flex; /* Размещаем элементы в одну строку */
+    align-items: center; /* Центрируем по вертикали */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Затемнение фона */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Убедитесь, что модальное окно поверх других элементов */
+}
+
+.modal-content {
+    background-color: white; /* Цвет фона модального окна */
+    padding: 20px;
+    border-radius: 8px; /* Закругленные углы */
+    max-width: 600px; /* Максимальная ширина модального окна */
+    width: 90%; /* Ширина по умолчанию */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для модального окна */
+}
+
+.modal-image {
+    width: 100%; /* Изображение на всю ширину модального окна */
+    height: auto; /* Автоматическая высота */
+    border-radius: 4px; /* Закругленные углы изображения */
+}
+
+.close-button {
+    top:0px ;
+    right: 2px;
+    padding: 3px 5px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px; /* Отступ сверху */
+}
+
+.close-button:hover {
+    background-color: #8f6008; /* Цвет при наведении */
+}
+
+.contacts-wrapper {
+    display: flex; /* Размещаем элементы в одну строку */
+}
+
+.contacts-info {
+    width: 50%; /* Ширина для информации */
+    padding: 20px; /* Отступы */
+    box-sizing: border-box; /* Учитываем отступы в ширине */
+}
+
+.contacts-map {
+    width: 50%; /* Ширина для карты */
+    padding: 20px; /* Отступы */
+    box-sizing: border-box; /* Учитываем отступы в ширине */
+}
+
+.title-4 {
+    color: black;
+	text-align: center;
+	z-index: 3;
+	font-family: '8bit', sans-serif;
+    font-size: 30px;
+}
+
+.title-5 {
+    color: rgb(255, 187, 41);
+	text-align: center;
+	z-index: 3;
+	font-family: '8bit', sans-serif;
+    font-size: 50px;
+}
